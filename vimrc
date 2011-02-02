@@ -123,9 +123,6 @@ set directory=~/.vim/backup
 " xterm not recognized right by vim
 " set term=builtin_ansi
 
-" MacVIM shift+arrow-keys behavior (required in .vimrc)
-let macvim_hig_shift_movement = 1
-
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
