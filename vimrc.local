@@ -1,0 +1,40 @@
+" MapLeader
+let mapleader = ","
+
+" Comments
+:map <Leader>c :call NERDComment(0, "toggle")<CR>
+
+" Bubble single line
+nmap <C-Up> ddkP
+nmap <C-Down> ddp
+
+" Status Line
+"set statusline=%<%f\ %h%m%r%{rails#statusline()}\ %{fugitive#statusline()}
+set statusline=%<%f\ %h%m%r\ %{fugitive#statusline()}
+
+
+" Rspec
+" :map <Leader>s :!spec %<CR>
+
+" ZoomWin
+:map <Leader>z :ZoomWin<CR>
+
+" Scratch
+:map <Leader>s :Scratch<CR>
+
+
+" less is CSS
+au BufRead,BufNewFile *.less setfiletype css
+
+" let Ack search all files
+let g:ackprg="ack -H --nocolor --nogroup --column --all"
+
+" Taskpaper.vim mappings
+map <buffer> <silent> qpd <Plug>ToggleDone
+map <buffer> <silent> qpc <Plug>ShowContext
+map <buffer> <silent> qpa <Plug>ShowAll
+map <buffer> <silent> qpp <Plug>FoldAllProjects
+map <f6> :sp /Users/mfosse/SimpleText/Tigerlily.taskpaper<CR>
+
+
+" map <leader>p :MDP<CR>
